@@ -1,2 +1,2 @@
 # isc-103-POO
-Repositorio para trabajos de clase.
+## Repositorio para trabajos de clase.
