@@ -1,1 +1,7 @@
-mvn/\n.settings/\n.classpath\n.project\n*.class\n
+target/
+NetBeansProjects/
+.mvn/
+.settings/
+.classpath
+.project
+*.class
