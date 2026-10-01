@@ -5,34 +5,53 @@ package com.mycompany.cuentabanco;
 
 /**
  *
- * @author juanalvarenga
+ * @author EdissonGuity
  */
 public class Cuentabanco {
 
     // El metodo principal / punto de entrada (ejecución)
     public static void main(String[] args) {
-
+        
+//        try{
+//            double test = 1/0;
+//        }catch(NullPointerException error){
+//            System.out.println(error);
+//        }catch (ArithmeticException error){
+            
+//        }
+        
         //crear una instancia de la clase Cuenta
-        Cuenta miCuenta = new Cuenta("Juan", 100.0);
-        Cuenta miCuenta2 = new Cuenta("Juan",60.45);
+//        Cuenta miCuenta = new Cuenta("Juan", 100.0);
+//        Cuenta miCuenta2 = new Cuenta("Juan",60.45);
 
         //Cuenta miCuenta2 = new Cuenta("Enrique",400);
         
-        System.out.println("=========miCuenta=========");
-        System.out.println(miCuenta.titular);
-        System.out.println(miCuenta.saldo);
-        System.out.println(miCuenta.getTitular());
-        System.out.println(miCuenta.getSaldo());
+//        System.out.println("=========miCuenta=========");
+//        System.out.println(miCuenta.getTitular());
+//        System.out.println(miCuenta.getSaldo());
 
 //        miCuenta2. saldo = 100000;
-        miCuenta2.retiro(100);
+//        try{
+//        miCuenta2.retiro(100);
         
-        System.out.println("=========miCuenta2=========");
-        System.out.println(miCuenta2.titular);
-        System.out.println(miCuenta2.saldo);
+//        miCuenta2.deposito(300);
+//        miCuenta2.deposito(-300);
+//        }catch(Exception error){
+//            System.out.println(error.getMessage());
+//        }
+        
+//        System.out.println("=========miCuenta2=========");
+//        System.out.println(miCuenta2.titular);
+//        System.out.println(miCuenta2.saldo);
 
-        System.out.println(miCuenta2.getTitular());
-        System.out.println(miCuenta2.getSaldo());
-        
+//        System.out.println(miCuenta2.getTitular());
+//        System.out.println(miCuenta2.getSaldo());
+            
+          CuentaAhorro personal = new CuentaAhorro("Enrique", 100, 0.06);
+          CuentaAhorro personal2 = new CuentaAhorro("Enrique", 100);
+          
+          CuentaCheque empresarial = new CuentaCheque("Pedro", 50000, 100000);
+          
+//          personal.titular;
     }
 }

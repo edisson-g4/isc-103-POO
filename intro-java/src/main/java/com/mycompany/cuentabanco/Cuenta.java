@@ -6,13 +6,11 @@ package com.mycompany.cuentabanco;
 
 /**
  *
- * @author ediss
+ * @author EdissonGuity
  */
 public class Cuenta {
-    public String titular;
-    public double saldo;
-    //private String titular;
-    //private double saldo;
+    private String titular;
+    private double saldo;
 
     //solicitar los parametros para realizar la inicializacion de las propiedades
     //argumentos posicionales
@@ -51,14 +49,16 @@ public class Cuenta {
 
     void retiro(double monto) {
 
+        if(monto < 0){
+            throw new ArithmeticException("El monto ingresado debe ser mayor a cero");
+        }
+        
         if (monto > this.saldo) {
-            //no se puede
-            //generar una excepción
-            return;
+            throw new Error("Fondos insuficientes");
         }
         
         if(monto > 5000){
-            //tampoco se puede
+            throw new Error("Fondos insuficientes");
         }
 
         this.saldo = this.saldo - monto;
@@ -70,5 +70,20 @@ public class Cuenta {
 //            //no se pudo
 //        }
     }
-
+    void deposito(double monto) {
+      
+//        if (monto < 0){
+            //no se puede
+//            return;
+//        }
+//        if (monto > 5000){
+            //tampoco se puede
+//           return;
+//        }
+           if (monto < 0 || monto > 5000){
+               throw new Error ("El monto ingresado no es valido");
+               //Thorw tengo que ir a investigarlo
+           }
+           this.saldo = this.saldo + monto;
+    } 
 }
