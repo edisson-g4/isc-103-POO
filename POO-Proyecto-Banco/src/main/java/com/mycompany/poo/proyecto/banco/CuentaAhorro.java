@@ -13,7 +13,7 @@ public class CuentaAhorro extends CuentaBancaria {
     public double tasaInteresAnual;
 
     private int retirosRealizadosMes;
-    private double comisionPorExceso = 20.0;
+    final private double comisionPorExceso = 20.0;
 
     public CuentaAhorro(String numeroCuenta, String titular, double saldoInicial, double tasaInteresAnual) {
 

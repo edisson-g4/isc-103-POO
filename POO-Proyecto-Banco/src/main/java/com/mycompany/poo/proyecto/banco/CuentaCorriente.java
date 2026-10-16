@@ -12,7 +12,7 @@ public class CuentaCorriente extends CuentaBancaria {
 
     public String nombreEmpresa;
 
-    private double limiteSobregiro;
+    final private double limiteSobregiro;
     private double sobregiroUtilizado;
 
     public CuentaCorriente(String numeroCuenta, String titular, double saldoInicial, String nombreEmpresa, double limiteSobregiro) {
