@@ -10,4 +10,5 @@
         <maven.compiler.release>26</maven.compiler.release>
         <exec.mainClass>com.mycompany.poo.proyecto.banco.POOProyectoBanco</exec.mainClass>
     </properties>
+    <name>POO-Proyecto-Banco-edisson-guity</name>
 </project>
